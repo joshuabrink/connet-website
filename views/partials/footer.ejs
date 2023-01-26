@@ -1,0 +1,98 @@
+     <footer class="page-footer grey darken-2">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col l4 s12">
+                <img class="responsive-img" src="/images/connetv2-i-small.png">
+                <p class="grey-text text-lighten-4">We are situated in Gauteng and we do provincial coverage of service and delivery.</p>
+              </div>
+              <div class="col l3 s6 offset-l1">
+                <h5 class="white-text">Contact Us</h5>
+                <div class="underline"></div>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="tel:0833269001"><i class="tiny material-icons">call</i> +27 83 326 9001</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:connet@mweb.co.za"> <i class="tiny material-icons">email</i> connet@connetgroup.co.za</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="tiny material-icons">location_on</i> Pretoria, Gauteng</a></li>
+                </ul>
+              </div>              
+              <div class="col l3 s4 offset-l1 offset-s1">
+                <h5 class="white-text">Navigate</h5>
+                <div class="underline"></div>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Products</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Services</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                </ul>
+              </div>
+            </div>
+          
+          <div class="footer-copyright">
+              <div class="row center-align">
+                <div class="col s12">
+                  © Copyright 2018 Connet - All rights reserved
+                </div>
+                
+                <a class="grey-text text-lighten-2" href="#!">Privacy Policy | </a>
+                <a class="grey-text text-lighten-2" href="#!">Terms & Conditions | </a>
+                <a class="grey-text text-lighten-2" href="#!">Sitemap </a>
+              </div>
+          </div>
+          </div>
+        </footer>
+    
+      <script type="text/javascript" src="/js/anime.min.js"></script>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+      <script type="text/javascript" src="/js/snap.svg-min.js"></script>
+      <script type="text/javascript" src="/js/partial.js"></script> 
+
+      <% if(page == "home") { %>
+        <script type="text/javascript" src="/js/home.js"></script>
+        <script src="/js/three.r92.min.js"></script>
+        <script src="/js/vanta.net.min.js"></script> 
+        <script>
+        VANTA.NET({
+          el: "#bg-image",
+          color: 0x2bb0d9,
+          backgroundColor: 0xf5f5f5,
+          points: 11.00,
+          showDots: false
+         
+        })
+        </script>
+      <% } else if(page == "about") { %>
+        <script type="text/javascript" src="/js/about.js"></script>
+        <script src="/js/three.r92.min.js"></script>
+
+        <script src="/js/vanta.birds.min.js"></script>
+        <script>
+        VANTA.BIRDS({
+          el: "#bg-image",
+          backgroundColor: 0xf2f2f2,
+          backgroundAlpha: 0,
+          color1: 0x1722d2,
+          speedLimit: 1.00,
+          separation: 52.00,
+          alignment: 1.00,
+          cohesion: 30.00,
+          quantity: 2.00
+        })
+
+        </script>
+      <% } else { %>
+        <script type="text/javascript" src="/js/product.js"></script>
+
+        <script src="/js/three.r92.min.js"></script>
+        <script src="/js/vanta.waves.min.js"></script>
+        
+        <script>
+        VANTA.WAVES({
+          el: "#bg-image",
+          color: 0xc0c0c0
+        })
+            </script>
+      <% } %>
+
+      <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+     
+ 
+    </body>
+</html>

@@ -1,0 +1,35 @@
+
+
+.shapeshifter {
+  /*animation-timing-function: steps(30)!important;*/
+  width: 184px;
+  height: 184px;
+  position: absolute;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 20px auto;
+  background-position: '0px 0px';
+  background-repeat: no-repeat !important;
+  animation-fill-mode: forwards;
+  background-image: url(/svg/cart30.svg);
+}
+
+.wrench {
+    /*animation-timing-function: steps(30) !important;*/
+  background-image: url(/svg/wrench30.svg) !important;
+}
+
+.router {
+  background-image: url(/svg/router30.svg) !important;
+}
+
+.backup {
+  background-image: url(/svg/backup30.svg) !important;
+}
+
+
+
+

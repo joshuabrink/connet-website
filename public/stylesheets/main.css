@@ -1,0 +1,67 @@
+/******* GLOBAL *********/
+
+.divider {
+  margin: 0 1vw;
+}
+
+.active-scrollspy {
+  border-left: 3px solid black;
+  padding-left: 14px !important;
+  font-weight: 600 !important;
+}
+
+#scroll-index {
+  height: 0;
+}
+
+#title-parallax {
+  border-radius: 20px;
+}
+
+#title-sub {
+  margin: 0;
+  margin-bottom: 60px;
+  transition: filter 0.3s ease-out;
+  filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.3)) !important;
+  background: linear-gradient(to right, rgb(0 0 0 / 0) 0%, rgb(0 0 0 / 0.2) 40%, rgb(0 0 0 / 0.2) 50%, rgb(0 0 0 / 0.2) 59%, rgb(0 0 0 / 0.2) 60%, rgb(0 0 0 / 0) 100%);
+}
+
+#title-sub h4 {
+  margin: 20px;
+}
+
+#title-sub h5 {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: italic;
+}
+
+#titleContainer {
+  margin-bottom: 52px;
+}
+
+.backGradient {
+  background: rgb(244 244 244);
+  background: linear-gradient(to bottom, rgb(244 244 244 / 1) 0%, rgb(241 241 241 / 1) 51%, rgb(241 241 241 / 1) 51%, rgb(225 225 225 / 1) 52%, rgb(246 246 246 / 1) 100%);
+}
+
+/*********** SCROLSPY ************/
+
+.pushpin {
+  z-index: 2;
+  width: 100px;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+#scroll-index .table-of-contents a {
+  font-family: Raleway;
+  color: white;
+  filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.3)) !important;
+}
+
+
+.parallax-container {
+  height: 100%;
+}
+

@@ -1,0 +1,269 @@
+/*********** SCROLSPY ************/
+
+.pushpin {
+    z-index: 2;
+    width: 100px;
+    padding-top: 50px;
+    margin-left: 20px;
+  }
+  
+  
+  .parallax-container {
+    height: 100%;
+  }
+
+  .segment {
+    margin-bottom: 160px;
+  }
+
+/********** ABOUT **********/
+
+#about {
+    margin: 0;
+  }
+
+  #bg-image {
+    background-image: url("/svg/Flat-Mountains.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  #titleContainer {
+    margin-bottom: -9px;
+  }
+  #title-sub .flow-text {
+    margin-top: 7px;
+  }
+
+  .segment {
+    margin-bottom: 120px;
+  }
+  
+  .about-background {
+    width: 500px;
+    margin: 15px auto;
+    padding: 13px 15px;
+    color: white;
+    line-height: 1.5;
+    background: #c00;
+    background: linear-gradient(135deg, transparent 10px, #c00 0) top left, linear-gradient(225deg, transparent 10px, #c00 0) top right, linear-gradient(315deg, transparent 10px, #c00 0) bottom right, linear-gradient(45deg, transparent 10px, #c00 0) bottom left;
+    background-image: radial-gradient(circle at 0 0, rgb(204 0 0 / 0) 14px, #c00 15px), radial-gradient(circle at 100% 0, rgb(204 0 0 / 0) 14px, #c00 15px), radial-gradient(circle at 100% 100%, rgb(204 0 0 / 0) 14px, #c00 15px), radial-gradient(circle at 0 100%, rgb(204 0 0 / 0) 14px, #c00 15px);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  
+  #about-title, #product-title, #quote-title, #title-parallax .hide-on-large-only {
+    color: white;
+    font-size: 150px;
+    background-repeat: no-repeat !important;
+    transition: filter 0.5s ease-out;
+    filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.3)) !important;
+  }
+  
+  #title-parallax .hide-on-large-only {
+    margin: 4vh 0;
+    font-size: 16vw;
+  }
+  
+  #service-parallax .hide-on-large-only {
+    margin: 9vh 0;
+    font-size: 16vw;
+  }
+  
+  .dropShadow {
+    filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.3)) !important;
+  }
+
+/************** Vision, Mission and Values ***********/
+
+#about .card {
+  height: 451px;
+}
+.card {
+  border-radius: 20px;
+}
+
+.card-title {
+  font-size: 32px !important;
+  font-weight: 500 !important;
+}
+
+.card-image .row {
+  width: 100%;
+  margin-left: 1px;
+}
+
+.card-image .col {
+  width: 150px;
+
+  background-image: url("/images/mission.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.card-image img {
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.card i {
+  vertical-align: initial;
+}
+
+.card p {
+  font-size: 1.17rem;
+}
+
+
+  
+   .circleBg {
+    background-color: white;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    margin: 20px auto;
+    padding-top: 4px;
+    transition: filter 0.5s ease-out;
+  }
+
+  .tab a{
+    color: rgba(66, 165, 245, 0.71) !important;
+  }
+
+  .tabs .tab a:hover, .tabs .tab a.active { 
+    color: #42a5f5 !important;
+    background-color: rgba(66, 165, 245, 0.15) !important;
+  }
+
+  .indicator {
+    background-color: #42a5f5 !important;
+  }
+  
+  /*
+  .about-svg {
+    width: 184px;
+    height: 184px;
+    opacity: 0;
+    z-index: 90;
+    margin: 20px auto;
+    background-repeat: no-repeat !important;
+    animation-fill-mode: forwards;
+  }
+  
+  #vision {
+    background-image: url(/svg/eye.svg);
+  }
+  
+  #mission {
+    background-image: url(/svg/mission.svg);
+  }
+  
+  #values {
+    background-image: url(/svg/values.svg);
+  } */
+  
+  .sub-title {
+    margin: 5px auto;
+    margin-bottom: 0;
+  }
+  
+  .about-text {
+    padding: 20px 20px !important;
+    font-family: "Raleway";
+    font-weight: 300;
+    width: 1090px;
+  }
+  
+  .about-text span {
+    padding: 0 20px;
+  }
+  
+  .value-heading {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .sub-about-text {
+    padding: 20px 20px !important;
+    font-family: "Raleway";
+    font-weight: 300;
+  }
+  
+  .sub-about-text h5 {
+    padding: 0;
+    font-weight: 300;
+  }
+  
+  .about-text h5 {
+    font-weight: 300;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .about-text h4 {
+    font-family: "Raleway";
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+
+  @media only screen and (max-width: 1366px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  #service .card {
+    margin-top: 0;
+    -webkit-box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.15);
+  }
+
+  #service .card-title { 
+    margin-bottom: 30px;
+  }
+
+  .service-sub {
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 14px;
+    font-size: 1.88rem;
+    background: white;
+    margin-bottom: 0;
+  }
+
+  #service .card-content h6{
+    font-size: 1.4rem;
+    margin-left: 30px;
+  }
+
+  #service .card-content i {
+    vertical-align: bottom;
+  }
+
+
+  #service .card-content p {
+    margin-left: 60px;
+    margin-bottom: 22px;
+  }
+  
+  #service-index {
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+
+
+  #service-index h5 {
+    color: white;
+    font-size: 16vw;
+    background-repeat: no-repeat !important;
+    transition: filter 0.5s ease-out;
+    filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.3)) !important;
+    margin-top: 81px;
+  }
+  
+
+  

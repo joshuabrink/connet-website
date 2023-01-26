@@ -1,0 +1,18 @@
+{"_id":{"$oid":"5b45f89331014011ca0c8d16"},"Name":"Product code","Price":"Selling Price","Description":"Description","Notes":"Notes"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d17"}}
+{"_id":{"$oid":"5b45f89331014011ca0c8d18"},"Name":"E970SWN/73","Price":"R 799","Description":"AOC monitor 18.5\" TN Panel, 1366x768, 16.7 Million colours, VGA, VESA, 4 year carry in warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d19"},"Name":"I2080SW","Price":"R 899","Description":"AOC monitor 19.5\" SW IPS Panel, 1440x900, 16.7 Million colours, VGA, VESA, Flicker Free 4 year carry in warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d1a"},"Name":"E2270SWHN","Price":"R 1,299","Description":" AOC Monitor 21,5' 1920x1080, 200 cd/m, response time 5ms, VGA, HDMI, Cables Incl, VESA, 4 year warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d1b"},"Name":"E2470SWH","Price":"R 1,599","Description":"AOC Monitor 23.6 1920x1080, 250 cd/m, response time 1ms, speakers, VGA, HDMI, VESA, 4 year carry in warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d1c"},"Description":"USB Powered"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d1d"},"Name":"E1670SWU/WM/73","Price":"R 799","Description":"AOC monitor 15.6\" 1368x768, VGA, VESA, USB, 4 year carry in warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d1e"},"Name":"E1659FWU","Price":"R 1,299","Description":"AOC USB 3.0 monitor 15.6\" 1366x768, Diagonal View, VESA, USB, 4 year carry in warranty, Mobile Carry Case Included ","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d1f"},"Name":"CAB058","Price":"R 135","Description":"Display Port {M} To HDMI{M} Cabel 1.8M","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d20"},"Description":"81P Series Creative"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d21"},"Name":"I2781FH","Price":"R 3,799","Description":"AOC monitor 27\" 1920x1080, 5ms, 250cdm, D Sub, HDMI, 4 year carry in Warranty, Flicker Free","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d22"},"Description":"Gaming"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d23"},"Name":"G2460VQ6","Price":"R 2,299","Description":"AOC Monitor: 23.8” Monitor: 1920x1080@75Hz, 1ms response, AMD FreeSync, Anti-Bluelight,DCR 80M:1, VGA, HDMI, DP, 4 year carry in warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d24"},"Name":"G2460PF","Price":"R 4,599","Description":"AOC Monitor: 23.8” Monitor: 1920x1080@144Hz, 1ms response, AMD FreeSync, Anti-Bluelight,DCR 80M:1  , VGA, HDMI, DP, DVI, 4 year carry in warranty","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d25"},"Name":"AG241QX","Price":"R 6,999","Description":"Agon Monitor: 23.8\" Flat Monitor 2560 x1440, 144hz, D Sub, VGA, HDMI, Display Port, Adaptive-Sync technology, 1 ms response time, USB fast charge, MHL, 4 year carry in warranty.","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d26"},"Name":"E2470SWH_CAB058","Price":"R 1,599","Description":"AOC Monitor 23.6” 1920x1080, 1 ms response time, speakers, VGA, HDMI, cables included HDMI-Display Port cabel included, VESA, 4 year carry in warranty.","Notes":"In Stock"}
+{"_id":{"$oid":"5b45f89331014011ca0c8d27"},"Name":"G2460PG-2","Price":"R 5,999","Description":"AOC Monitor: 23.8” Monitor: 1920x1080@180Hz, 1ms response,NVIDIA G-SYNC, 4-way adjustable stand, HDMI, DP, 4 year carry in warranty","Notes":"In Stock"}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Connet</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="/stylesheets/partial.css">
+    <% if(page === "home") { %>
+      <link rel="stylesheet" href="/stylesheets/home.css">
+    <% } else if(page == "about") { %>
+      <link rel="stylesheet" href="/stylesheets/about.css">
+    <% } else { %>
+      <link rel="stylesheet" href="/stylesheets/product.css">
+    <% } %>
+          <link rel="stylesheet" href="/stylesheets/animate.min.css">
+          <!-- <link rel="stylesheet" type="text/css" href="/stylesheets/sprite_30fps.css" /> -->
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Raleway:300,300i,400,500,600|
+        Titillium+Web: 400,600|PT+Sans:400,700|Lora|Tangerine:700|Montserrat:400,600,700" rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body id="scrollBackground">
+    
+
+<!-- NAVBAR -->
+    <nav class="nav-extended">
+      <div id="top" class="nav-wrapper grey hide-on-med-and-down">
+        <div class="container">
+          <a href="/" class="brand-logo">
+            <img id="mainnav-logo"class="responsive-img" src="/images/connet-logo.png">
+          </a>
+        </div>
+      </div>
+      <div id="wrapper" class="hide-on-med-and-down">
+        <div id="main-nav" class="nav-wrapper nav-pushpin">
+          <div class="container">
+            <a id="scroll-logo" href="/">
+                <img class="hide-on-small-only nav-logo"  src="/images/connet-logo-iC.png">
+                <img class="hide-on-small-only nav-logo" src="/images/connet-logo-iO.png">
+              <img class="hide-on-small-only nav-logo" src="/images/connet-logo-i0.png">
+            </a>
+            <ul id="nav-items" class="right hide-on-med-and-down">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/products/index">Products</a></li>
+              <!-- <li><a class="dropdown-trigger" href="/services/index" data-target="dropdown">Services</a></li> -->
+              <li><a class="dropdown-trigger" href="/" data-target="dropdown-contact">Contact</a></li>
+              <li><a href="#login" class="modal-trigger"><img class="login-icon" src="/images/userv2-i.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-fixed hide-on-large-only">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"><img id="mobinav-logo" src="/images/connetv2-logo-i-sh.png"></a>
+          <a href="/about" class="hide-on-large-only"><i class="material-icons white-text">info_outline</i></a>
+          <a id="sidenav-trigger" href="#" data-target="mobi-sidenav" class="sidenav-trigger right"><i class="material-icons white-text">menu</i></a>
+        </div>
+      </nav>
+    </div>
+
+    <ul id="dropdown" class="dropdown-content">
+      <li><a href="/services/maintenance">Maintainence</a></li>
+      <li><a href="/services/support">Network Cabling</a></li>
+      <li><a href="/services/support">Backup Services</a></li>
+    </ul>
+
+    <ul id="dropdown-contact" class="dropdown-content">
+      <li><a href=""><i class="material-icons black-text">call</i>082 797 6439</a></li>
+      <li><a class="modal-trigger" href="#emailForm"><i class="material-icons black-text">email</i>conet@mweb.co.za</a></li>
+    </ul>
+
+
+
+    <!--Modals -->
+
+      <!-- EMAIL -->
+    <div id="emailForm" class="modal">
+      <h5 class="modal-close right">&#10005;</h5>
+      <div class="modal-content">
+        <div class="container">
+                  <div class="row">
+          <h1 class='center-align'>Quote/Query:</h1>
+          <form method="post" action="/email" class="col s12">
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field">
+                <i class="material-icons prefix">subject</i>
+                <input type="text" id="subject" name="mail[subject]">
+                <label for="subject">Subject</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field">
+                  <i class="material-icons prefix">text_fields</i>
+                  <textarea name='mail[text]' id="text-field" class="materialize-textarea validate"></textarea>
+                  <label for="text-field">Message:</label>
+                </div>
+              </div>
+            </div>
+            <div class="row center-align">
+              <div class="input-field"><input type="checkbox" id="emailCaptcha" class='disabled'>
+                <%-captcha%>
+              </div>
+              <div class="input-field">
+                <input type="submit" id="send" value="Submit">
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+      <!-- LOGIN -->
+    <div id="login" class="modal">
+        <h5 class="modal-close right">&#10005;</h5>
+        <div class="modal-content center">
+          <div class="loginTitle">
+            <img src="/images/connetv2-logo-i-sh.png" alt="logo">
+          </div>
+          <br>
+          <form class="form container" action="/login" method="post">                  
+                <div class="input-field">
+                  <i class="material-icons prefix">person</i>
+                  <input type="text" id="username" name="username">
+                  <label for="username">Username</label>
+                </div>
+            <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input type="password" id="pass" name="password">
+              <label for="pass">Password</label>
+            </div>
+            <br>
+            <div class="input-field"><input type="checkbox" id="loginCaptcha">
+              <%-captcha%>
+            </div>
+  
+            <input type="submit" value="Login" class="btn btn-large blue lighten-1 submit">
+            <div class="eula">By logging in you agree to the <a href="#">terms &amp; conditions</a></div>
+          </form>
+        </div>
+      </div>
+
+  <!-- SIDENAV -->
+
+    <ul class="sidenav" id="mobi-sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="/images/shapes-sm.jpg">
+          </div>
+          <!--<a href="#user"><img class="circle" src="/images/user-i.png"></a>-->
+          <% if(!currentUser){ %>
+            <a class="waves-effect waves-blue btn-flat modal-trigger white-text name" 
+            href="#login">
+              <h3 class="center-align">Login<i class="material-icons">person</i></h3>
+            </a>
+            <a href="#email"><span class="white-text email"></span></a>
+            <% } else { %>
+              <a href="#login"><span class="white-text name"><%=currentUser.username%></span></a>
+              <a href="#email"><span class="white-text email"><%=currentUser.email%></span></a>
+              <% } %>
+        </div>
+      </li>
+      <% if(page === "home" && page != false) { %>
+        <li><a href="about"><i class="material-icons">info_outline</i>About</a></li>
+      <% } else { %>
+          <li><a href="/"><i class="material-icons">home</i>Home</a></li>
+      <% } %>
+          <div class="divider"></div>
+          <li><a href="products/index"><i class="material-icons">devices</i>Products</a></li>
+          <div class="divider"></div>
+          <li><a href="services/index"><i class="material-icons">build</i>Services</a></li>
+          <div class="divider"></div>
+          <li><a class="service-cat" href="/services/maintenance">Maintainence & Repair</a></li>
+          <li><a class="service-cat" href="/services/support">Support</a></li>
+          <div class="divider"></div>
+          <li><a href="contact"><i class="material-icons">call</i>Contact</a></li>
+          <div class="divider"></div>
+    </ul>
+
+
+  <div class="fixed-action-btn">
+    <a id="myBtn" onclick="smoothScroll('top')" class="btn-floating btn-large white">
+      <i class="large material-icons blue-text text-darken-2">keyboard_arrow_up</i>
+    </a>
+  </div>
+
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <% if(toast != null) {
+      if(toast == 'fail') { %>
+      <div class="failedLogin"></div>
+      <% } else if(toast == 'pass') { %>
+        <div class="passedLogin"></div>
+        <%  } else if(toast == 'loggedout') { %>
+          <div class="loggedOut"></div>
+          <%   } else if(toast == 'captchaFail') { %>
+            <div class="captchaFail"></div>
+            <% }
+  }
+ %>

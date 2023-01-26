@@ -1,0 +1,477 @@
+/************ GLOBAL *****************/
+
+body {
+    font-family: 'Montserrat';
+    transition: 0.6s ease-out;
+    background: rgb(66,165,245);
+background: linear-gradient(0deg, rgba(66,165,245,1) 0%, rgba(247,247,247,1) 47%, rgba(247,247,247,1) 100%);
+    
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  #bg-image {
+    height: 100%;
+  }
+
+  /* Track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+  
+  .waves-effect.waves-blue .waves-ripple {
+    background-color: rgba(66, 165, 245, 0.5);
+  }
+  
+  .segment {
+    margin-bottom: 160px;
+  }
+
+.divider {
+    margin: 0 1vw;
+  }
+  
+  .active-scrollspy {
+    border-left: 3px solid black;
+    padding-left: 14px !important;
+    font-weight: 600 !important;
+  }
+  
+  #scroll-index {
+    height: 0;
+  }
+  
+  #title-parallax {
+    border-radius: 20px;
+  }
+  
+  #title-sub {
+    margin: 0;
+    margin-bottom: 60px;
+    transition: filter 0.3s ease-out;
+    filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.3)) !important;
+    background: linear-gradient(to right, rgb(0 0 0 / 0) 0%, rgb(0 0 0 / 0.2) 40%, rgb(0 0 0 / 0.2) 50%, rgb(0 0 0 / 0.2) 59%, rgb(0 0 0 / 0.2) 60%, rgb(0 0 0 / 0) 100%);
+  }
+  
+  #title-sub h4 {
+    margin: 20px;
+  }
+  
+  #title-sub h5 {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: italic;
+    line-height: 145%;
+  }
+  
+  #titleContainer {
+    margin-bottom: 52px;
+  }
+
+  .bolded {
+    font-weight: 800;
+  }
+  
+  /* .backGradient {
+    background: rgb(244 244 244);
+    background: linear-gradient(to bottom, rgb(244 244 244 / 1) 0%, rgb(241 241 241 / 1) 51%, rgb(241 241 241 / 1) 51%, rgb(225 225 225 / 1) 52%, rgb(246 246 246 / 1) 100%);
+  } */
+  
+  
+
+  /************ PRELOADER ***************/
+
+.preloader-background {
+    display: flex;
+    align-items: center;
+    transition: 0.9s ease-in-out;
+    animation-fill-mode: forwards;
+    justify-content: center;
+    background-color: #eee;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /************* NAVBAR ****************/
+  
+  /* MAIN LOGO */
+  
+  #mainnav-logo {
+    padding-top: 5px;
+    width: 336px !important;
+    padding-left: 0;
+    width: 350px;
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.2)) !important;
+  }
+  
+  /* NAVBAR BACKGROUND */
+
+  nav {
+    background-color: #f5f5f5; /* IMPORTANT FOR NAVBAR COLOR. GLITCHES THIS COLOR OVER NAV WHEN SCROLLING FAST*/
+  }
+  
+  .nav-extended {
+    box-shadow: 0 0 0 0;
+  }
+  
+  #top {
+    z-index: 104;
+    background: rgb(244 244 244);
+    background: linear-gradient(to bottom, rgb(244 244 244 / 1) 0%, rgb(241 241 241 / 1) 51%, rgb(241 241 241 / 1) 51%, rgb(225 225 225 / 1) 52%, rgb(246 246 246 / 1) 100%);
+  }
+  
+  #wrapper {
+    height: 50px;
+  }
+  
+  #main-nav {
+    min-height: 50px;
+    width: 100% !important;
+    z-index: 100 !important;
+    height: 0 !important;
+  }
+  
+  .nav-wrapper {
+    padding-left: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* NAV LINKS */
+  
+  nav ul a {
+    color: #212121;
+  }
+  
+  #nav-items {
+    line-height: 50px;
+  }
+  
+  #nav-items a:hover {
+    color: #42a5f5 !important;
+    transition: color 0.3s ease-in-out;
+    background-color: #f5f5f5;
+  }
+  
+  /* SCROLL LOGO */
+  
+  .nav-logo:nth-of-type(1) {
+    width: 38px;
+    vertical-align: middle;
+    opacity: 0;
+    animation-fill-mode: forwards !important;
+    margin-bottom: 17px;
+  }
+  
+  .nav-logo:nth-of-type(2) {
+    width: 38px;
+    vertical-align: middle;
+    opacity: 0;
+    margin-left: -8px;
+    margin-bottom: 17px;
+  }
+  
+  .nav-logo:nth-of-type(3) {
+    width: 13px;
+    opacity: 0;
+    margin-left: -29px;
+    margin-bottom: 6px;
+  }
+  
+  /* DROPDOWNS */
+  
+  .dropdown-content {
+    background-color: #f5f5f5;
+    margin: 0;
+    display: none;
+    min-width: 300px;
+    margin-left: -1px;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+    will-change: width, height;
+  }
+  
+  .dropdown-content li a {
+    color: #212121;
+    background-color: #f5f5f5;
+  }
+  
+  #dropdown-contact i {
+    display: inline-block !important;
+    background-color: transparent;
+    filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.3)) !important;
+  }
+  
+  /* MOBILE NAV */
+  
+  .nav-wrapper i {
+    display: inline-block !important;
+    background-color: transparent;
+    filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.3)) !important;
+  }
+  
+  #sidenav-trigger {
+    margin-left: 10px;
+  }
+  
+  #mobinav-logo {
+    padding-top: 14%;
+    width: 76px !important;
+    padding-left: 0;
+    width: 350px;
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.2)) !important;
+  }
+  
+  /*********** SIDENAV *************/
+  
+  .sidenav {
+    background-color: #f5f5f5;
+  }
+  
+  .service-cat {
+    padding-left: 80px !important;
+  }
+  
+  #mobi-sidenav .divider {
+    margin: 0 !important;
+  }
+  
+  .user-view .btn-small {
+    padding: 0 7px !important;
+    margin-left: 10px;
+  }
+  
+  .user-view h3 i {
+    font-size: 1em;
+    vertical-align: bottom;
+  }
+  
+  .user-view i {
+    background-color: transparent;
+    color: white;
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4)) !important;
+  }
+  
+  .sidenav li a:hover {
+    color: #42A5F5 !important;
+    transition: 0.2s ease-in;
+  }
+  
+  .sidenav li i {
+    background-color: transparent;
+  }
+  
+  .sidenav li:hover i {
+    color: #42A5F5 !important;
+    transition: 0.2s ease-in;
+  }
+
+  /********** FORMS *************/
+
+/* EMAIL */
+
+#emailForm {
+    max-height: fit-content;
+  }
+  
+  #emailCaptcha {
+    width: 10px;
+  }
+  
+  #send {
+    color: #212121;
+  }
+  
+  #emailForm h1 {
+    color: white;
+    filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.3)) !important;
+    margin: 30px 0;
+    margin-bottom: 45px;
+  }
+  
+  #emailForm .select-dropdown {
+    color: black;
+  }
+  
+  /* LOGIN */
+  
+  #loginCaptcha {
+    width: 10px;
+  }
+  
+  .login-icon {
+    width: 40px;
+    vertical-align: middle;
+  }
+  
+  #login img {
+    width: 156px;
+  }
+  
+  .loginTitle {
+    margin-left: 34px;
+  }
+  
+  .modal-close {
+    margin-right: 18px;
+  }
+  
+  /* RECAPTCHA */
+  
+  .g-recaptcha {
+    display: inline-block;
+    margin-bottom: 43px;
+  }
+  
+  .captcha {
+    top: 20px;
+    left: -28px;
+  }
+  
+  /* INPUT FIELDS */
+  
+  .input-field .prefix.active {
+    color: #42a5f5;
+  }
+  
+  .input-field input[type="email"]:focus #login-text {
+    box-shadow: none;
+  }
+  
+  .input-field input[type="text"]:focus+label, input[type="email"]:focus+label, input[type="password"]:focus+label {
+    color: #42a5f5 !important;
+    border-bottom: none;
+  }
+  
+  .input-field input[type="text"], input[type="email"], input[type="password"] {
+    color: #42a5f5 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  
+  .input-field .materialize-textarea {
+    color: black !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  
+  .input-field .materialize-textarea:focus+label {
+    color: #42a5f5 !important;
+    border-bottom: none !important;
+  }
+  
+  .eula {
+    color: #c3c3c3;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+    display: grid;
+    padding-top: 18px;
+  }
+  
+  .eula a {
+    font-size: 10px;
+    color: #888787;
+    text-decoration: underline;
+  }
+  
+  .modal-content {
+    background-color: #f5f5f5;
+  }
+  
+  input {
+    background: transparent;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+  }
+  
+  input::-moz-focus-inner {
+    border: 0;
+  }
+  
+  #logo-container {
+    z-index: 8;
+    margin: auto;
+    position: absolute;
+    max-height: 600px;
+    margin: 0;
+    top: 120px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  /********* SCROLL BTN ************/
+
+#myBtn {
+    background-color: rgb(255 255 255 / 0.8) !important;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  /************* FOOTER ***************/
+
+  .underline {
+    margin-left: 0;
+    width: 50px;
+    height: 5px;
+    background-color: #1976D2;
+  }
+  
+  .page-footer .container-fluid {
+    padding: 0 10%;
+    margin: 0;
+  }
+  
+  .page-footer h5 {
+    margin: 2px;
+  }
+  
+  .page-footer .underline {
+    background-color: #1976D2;
+    width: 40px;
+    height: 5px;
+  }
+  
+  .page-footer img {
+    margin-left: -30px;
+    min-width: 250px;
+  }
+  
+  .footer-copyright a {
+    font-size: smaller;
+  }
+  
+  .page-footer a:hover {
+    color: white !important;
+  }
+  
+  .footer-copyright .container {
+    margin: 0 10%;
+  }
+
+  

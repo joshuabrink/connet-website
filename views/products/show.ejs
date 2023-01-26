@@ -1,0 +1,24 @@
+<%include ../partials/header %>
+
+<div class="fixed-action-btn">
+  <a id="myBtn" onclick="smoothScroll('top')" class="btn-floating btn-large white">
+    <i class="large material-icons blue-text text-darken-2">keyboard_arrow_up</i>
+  </a>
+</div> 
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <% products.forEach(function(product) { %> 
+        <p><%= product.Name %></p>
+        <p><%= product.ItemNumber %></p>
+        <p><%= product.Description %></p>
+        <p><%= product.Price %></p>
+        <p></p>
+        <p></p>
+        <% }); %>
+    </div>
+</div>
+
+
+<%include ../partials/footer %>
