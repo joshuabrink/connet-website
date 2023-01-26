@@ -4,27 +4,25 @@ version: '3.9'
 
 services:
   # web:
-  #   build: .
-  #   # image: node:8.16.0
-  #   container_name: connet-web
-  #   restart: unless-stopped
-  #   env_file: .env
-  #   environment:
-  #     - MONGO_USERNAME=$MONGO_USERNAME
-  #     - MONGO_PASSWORD=$MONGO_PASSWORD
-  #     - MONGO_HOSTNAME=$MONGO_HOSTNAME
-  #     - MONGO_PORT=$MONGO_PORT
-  #     - MONGO_DB=$MONGO_DB 
-  #   ports:
-  #     - 3000:3000
-  #   volumes:
-  #     - .:/home/node/app
-  #     - node_modules:/home/node/app/node_modules
-  #   command: /home/node/app/node_modules/.bin/nodemon app.js
-  #   networks:
-  #     - connet-network
-  #   depends_on:
-  #     - mongodb
+    # build: .
+    # # image: node:8.16.0
+    # container_name: connet-web
+    # restart: unless-stopped
+    # env_file: .env
+    # environment:
+    #   - MONGO_USERNAME=$MONGO_USERNAME
+    #   - MONGO_PASSWORD=$MONGO_PASSWORD
+    #   - MONGO_HOSTNAME=mongodb
+    #   - MONGO_PORT=$MONGO_PORT
+    #   - MONGO_DB=$MONGO_DB 
+    # ports:
+    #   - "3000:3000"
+    # depends_on:
+    #   - mongodb
+    #   # - node_modules:/home/node/app/node_modules
+    # command: ./wait-for.sh mongodb:27017 -- /node_modules/.bin/nodemon app.js
+    # networks:
+    #   - connet-network
 
   # mongo db to run on port 27017
 
@@ -41,7 +39,7 @@ services:
     networks:
       - connet-network
     ports:
-      - 27017:27017
+      - "27017:27017"
 
 networks:
   connet-network:
