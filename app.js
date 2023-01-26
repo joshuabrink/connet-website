@@ -112,6 +112,7 @@ app.use(indexRoutes);
 //     res.render("services/support", {page: "service"});
 // })
 
-app.listen(3000, "localhost", function (req, res) {
+https://stackoverflow.com/a/65721397
+app.listen(3000, "0.0.0.0", function (req, res) {
   console.log("Server is running.");
 });
