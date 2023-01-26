@@ -3,26 +3,31 @@
 version: '3.9'
 
 services:
-  # web:
-    # build: .
-    # # image: node:8.16.0
-    # container_name: connet-web
-    # restart: unless-stopped
-    # env_file: .env
-    # environment:
-    #   - MONGO_USERNAME=$MONGO_USERNAME
-    #   - MONGO_PASSWORD=$MONGO_PASSWORD
-    #   - MONGO_HOSTNAME=mongodb
-    #   - MONGO_PORT=$MONGO_PORT
-    #   - MONGO_DB=$MONGO_DB 
-    # ports:
-    #   - "3000:3000"
-    # depends_on:
-    #   - mongodb
-    #   # - node_modules:/home/node/app/node_modules
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PACKAGES: "nano wget curl"
+    container_name: connet-web
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MONGO_USERNAME=$MONGO_USERNAME
+      - MONGO_PASSWORD=$MONGO_PASSWORD
+      - MONGO_HOSTNAME=mongodb
+      - MONGO_PORT=$MONGO_PORT
+      - MONGO_DB=$MONGO_DB
+      - NODE_ENV=production
+      - APP_VERSION=1.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+      # - node_modules:/home/node/app/node_modules
     # command: ./wait-for.sh mongodb:27017 -- /node_modules/.bin/nodemon app.js
-    # networks:
-    #   - connet-network
+    networks:
+      - connet-network
 
   # mongo db to run on port 27017
 
@@ -38,8 +43,8 @@ services:
     #   - dbdata:/data/db
     networks:
       - connet-network
-    ports:
-      - "27017:27017"
+    # ports:
+    #   - "27017:27017"
 
 networks:
   connet-network:
