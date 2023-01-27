@@ -32,7 +32,7 @@ services:
   # mongo db to run on port 27017
 
   mongodb:
-    image: mongo:4.2.0
+    image: mongo:4.2.8
     container_name: connet-db
     restart: unless-stopped
     env_file: .env
