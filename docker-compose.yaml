@@ -20,8 +20,6 @@ services:
       - MONGO_DB=$MONGO_DB
       - NODE_ENV=production
       - APP_VERSION=1.0
-    ports:
-      - "8080:8080"
     volumes:
       - .:/var/www/
       - node_modules:/var/www/node_modules
@@ -31,6 +29,13 @@ services:
     # command: ./wait-for.sh mongodb:27017 -- /node_modules/.bin/nodemon app.js
     networks:
       - connet-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`${WEBSITE_HOSTNAME}`)"
+      - "traefik.http.services.api.loadbalancer.server.port=8080"
+      - "traefik.http.routers.api.entrypoints=websecure"
+      - "traefik.http.routers.api.tls.certresolver=myresolver"
+
 
   # mongo db to run on port 27017
 
