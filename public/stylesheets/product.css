@@ -1,5 +1,9 @@
 /******* PRODUCTS *******/
 
+.vanta-canvas {
+  height: 100% !important;
+}
+
 /* CAROUSEL */
 #product-title {
   color: white;
